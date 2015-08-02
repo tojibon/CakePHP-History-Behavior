@@ -11,17 +11,22 @@ You can enable any Model history feature by following bellow steps of installati
 4. [Important] - You must create a database table with same fields of your target model table with some extra fields as mentioned below sample History Model definition.
 5. That's all, Now it's your time to do what ever you want with your each model history data from database tables.
 
-##Sample of a Model which has supports for history data:
-<code>
+###Sample of a Model which has supports for history data:
+Guest.php
+<pre>
+&lt;?php
 App::uses('AppModel', 'Model');
 class Guest extends AppModel {
 	public $useTable = 'guests';
 	public $actsAs = array('History');
 }
-</code>
+?&gt;
+</pre>
 
-##Sample of a History Model of above mentioned Guest Model
-<code>
+###Sample of a History Model of above mentioned Guest Model
+GuestHistory.php
+<pre>
+&lt;?php
 /*
 A database table with same schema as Guest but with 4 extra fields as mentioned below.
 `model_id` int(11) DEFAULT NULL,
@@ -33,5 +38,6 @@ App::uses('AppModel', 'Model');
 class GuestHistory extends AppModel {
 	public $useTable = 'guests_history';	
 }
-</code>
+?&gt;
+</pre>
 Thanks and have a wonderful night!!
