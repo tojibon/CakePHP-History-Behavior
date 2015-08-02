@@ -5,11 +5,13 @@ CakePHP 2.x.x Model History Behavior by which It is possible to record a history
 Download the archive and past the Model folder into your CakePHP project installation. So that, it will copy a HistoryBehavior under Behavior directory inside Model directory.
 
 You can enable any Model history feature by following bellow steps of installation
+<pre>
 1. Place the HistoryBehavior.php file under Behavior directory inside Model directory.
 2. Add `public $actsAs = array('History');` in any Model definition, For example see below Sample Guest Model definition.
 3. [Option] - Create a History Model as well.
 4. [Important] - You must create a database table with same fields of your target model table with some extra fields as mentioned below sample History Model definition.
 5. That's all, Now it's your time to do what ever you want with your each model history data from database tables.
+</pre>
 
 ###Sample of a Model which has supports for history data:
 Guest.php
