@@ -36,7 +36,7 @@ A database table with same schema as Guest but with 4 extra fields as mentioned 
 */
 App::uses('AppModel', 'Model');
 class GuestHistory extends AppModel {
-	public $useTable = 'guests_history';	
+	public $useTable = 'guests_histories';	
 }
 ?&gt;
 </pre>
