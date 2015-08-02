@@ -1,4 +1,4 @@
-# CakePHP-History-Behavior
+# CakePHP History Behavior
 CakePHP 2.x.x Model History Behavior by which It is possible to record a history of each CRUD action based on a Model.
 
 ##Installation
